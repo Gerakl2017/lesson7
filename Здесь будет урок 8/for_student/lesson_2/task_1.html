@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        img{
+            position: relative;
+            border: solid 10px green;
+            padding: 5px;
+        }
+        p{position: relative;
+        display: inline-block;}
+    </style>
+</head>
+<body>
+    <img src="img/img.jpg"><br>
+    <input type="button" value="tuda" class="tuda">
+    <input type="button" value="suda" class="suda">
+    <h1>Title</h1>
+    <script>
+        $(document).ready(function(){
+             $(".tuda").click(function(){
+                /*$("img").slideUp(5000);
+                $("img").slideDown(5000);
+                $("img").slideToggle(1000);
+                $("img").slideToggle(100);*/
+                $("img").animate({left:600},3000);
+                $("h1").animate({fontSize:109},'fast')
+            }
+            )
+            $(".suda").click(function(){
+                $("img").animate({rigth:200},2500);})
+        }
+        )
+    </script>
+</body>
+</html>
